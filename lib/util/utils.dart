@@ -80,13 +80,13 @@ Widget popularDealsWidget(BuildContext context, String imageUrl, String category
               color: Colors.lightGreen[100],
             ),
             clipBehavior: Clip.hardEdge, // Ensures that the image respects the rounded corners
-            child: CachedNetworkImage(
-              imageUrl: imageUrl,
+            child: Image.network(
+               imageUrl,
               height: 85,
               width: 100,
               fit: BoxFit.cover, // Ensures the image covers the container's area
-              placeholder: (context, url) => CircularProgressIndicator(),
-              errorWidget: (context, url, error) => Icon(Icons.error),
+              // placeholder: (context, url) => CircularProgressIndicator(),
+              // errorWidget: (context, url, error) => Icon(Icons.error),
             ),
           )
 ,

@@ -93,15 +93,21 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             clipBehavior: Clip.hardEdge,
             // Ensures that the image respects the rounded corners
-            child: CachedNetworkImage(
-              imageUrl:
+            child: Image.network(
+
                   "https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg",
               height: 45,
               width: 45,
               fit: BoxFit.cover,
               // Ensures the image covers the container's area
-              placeholder: (context, url) => CircularProgressIndicator(),
-              errorWidget: (context, url, error) => Icon(Icons.error),
+              // placeholder: (context, url) => Center(
+              //   child: SizedBox(
+              //     height: 20,
+              //     width: 20,
+              //     child: CircularProgressIndicator(strokeWidth: 2),
+              //   ),
+              // ),
+              // errorWidget: (context, url, error) => Icon(Icons.error),
             ),
           ),
         ],
@@ -205,7 +211,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 borderRadius: BorderRadius.circular(8.0),
                 // Optional: to round corners
                 child: Image.network(
-                  imageUrls[index],
+                    imageUrls[index],
                   fit: BoxFit.cover,
                   width: double.infinity, // Fill width of the card
                   height: double.infinity, // Fill height of the card

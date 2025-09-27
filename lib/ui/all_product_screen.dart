@@ -3,7 +3,7 @@ import 'package:fakestore/model/product_model.dart';
 import 'package:fakestore/ui/product_details_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
+import 'package:cached_network_image/cached_network_image.dart';
 
 
 class AllProductScreen extends StatefulWidget {
@@ -128,7 +128,7 @@ class _AllProductScreenState extends State<AllProductScreen> {
                                             width: double.infinity,
                                             height: 140, // Adjust image height as needed
                                             child: Image.network(
-                                              product.image,
+                                                product.image,
                                               fit: BoxFit.cover,
                                             ),
                                           ),
