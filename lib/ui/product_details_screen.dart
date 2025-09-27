@@ -216,9 +216,9 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
               children: [
                 Expanded(
                   child: Container(
-                    padding:  EdgeInsets.symmetric(horizontal: 16.0),
+                    padding:  EdgeInsets.symmetric(horizontal: 10.0),
                     decoration: BoxDecoration(
-                      color: Colors.green,
+                      // color: Colors.green,
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: [
                         BoxShadow(
@@ -256,12 +256,12 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                     ),
                   ),
                 ),
-                SizedBox(width: 10),
+                // SizedBox(width: 10),
                 Expanded(
                   child: Container(
-                    padding:  EdgeInsets.symmetric(horizontal: 16.0),
+                    padding:  EdgeInsets.symmetric(horizontal: 10.0),
                     decoration: BoxDecoration(
-                      color: Colors.green,
+                      // color: Colors.green,
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: [
                         BoxShadow(
